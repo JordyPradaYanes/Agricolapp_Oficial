@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maquetacion Freameworks</title>
+    <title>Agricolapp</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="images/icono.webp">
 </head>
@@ -20,10 +20,12 @@
                 <nav id="menu">
                     <a href="#slider">Inicio</a>
                     <a href="#productos">Productos</a>
-                    <a href="#user">Usuarios</a>
+                    <a href="#metodos1">Métodos de producción</a>
+                    <a href="#comercializacion">Comercialización</a>
+                    <a href="#consejos">Consejos y guías</a>
+                    <a href="html/form2.html" target="_blank">Usuarios</a>
                 </nav>
             </div>
-            
             <!-- LIMPIAR FLOTADOS  -->
             <div class="clearfix"></div>
         </div>
@@ -66,16 +68,15 @@
             </div>
 
         </section>
-
             <!-- Productos -->
-
         <section>
-        <div class="center">
-            <div class="content productos" id="productos">
-                <h2 class="subheader">Últimos Productos</h2>
-                <div id="articles">
+            <div class="center">
+                <div class="content productos" id="productos">
+                    <h2 class="subheader">Últimos Productos</h2>
+                    <div class="clearflix"></div>
+                    <div id="articles">
+
                     <article class="article-item article-btn" id="article-template">
-      
                       <div class="image-wrap">
                             <img src="../images/header-platano.png" alt="banano">
                         </div>
@@ -84,13 +85,10 @@
                            Precio: <span>2000</span>
                         </span>
                         <span>Peso: Libra</span>
-      
                         <div class="clearflix"></div>
-      
                     </article>
-      
-                    <article class="article-item article-btn" id="article-template">
-                      
+
+                    <article class="article-item article-btn" id="article-template">  
                       <div class="image-wrap">
                             <img src="../images/Cebolla.jpg" alt="cebolla">
                         </div>
@@ -99,13 +97,10 @@
                             Precio: 4500
                         </span>
                         <span>Peso: Libra</span>
-      
                         <div class="clearflix"></div>
-      
                     </article>
       
                     <article class="article-item article-btn" id="article-template">
-                      
                       <div class="image-wrap">
                             <img src="../images/Mandarina.webp" alt="mandarina">
                         </div>
@@ -114,13 +109,10 @@
                             Precio: 2000
                         </span>
                       <span>Peso: Libra</span>
-      
                         <div class="clearflix"></div>
-      
                     </article>
       
                     <article class="article-item article-btn" id="article-template">
-                      
                         <div class="image-wrap">
                             <img src="../images/aguacate-papelillo-x-1-unidad.jpg" alt="aguacate">
                         </div>
@@ -131,56 +123,71 @@
                         <span>
                           Peso: C/U
                         </span>
-      
                         <div class="clearflix"></div>
-                        
                     </article>
-      
                 </div>
+            </div>
         </section>
-
-             <!-- USUARIOS -->
-
-        <section>
+        <!-- Metodos de produccion -->
+        <section id="metodos">
             <div class="center">
-                <div class="content user" id="user">
-                    <h1 class="subheader">Ingresar Usuario</h1>
-            
-                    <form class="mid-form" id="formulario">
-                        <div class="form-group">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" class="errores" name="nombre">
-                        </div>
-            
-                        <div class="form-group">
-                        <label for="apellido">Apellido</label>
-                        <input type="text" id="apellido" class="errores" name="nombre">
-                        </div>
-            
-                        <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" class="errores" name="email">
-                        </div>
-            
-                        <div class="form-group radiobtn">
-                        <input type="radio" name="genero" id="hombre" value="hombre" /> Masculino
-                        <input type="radio" name="genero" id="mujer" value="mujer" /> Femenino
-                        </div>
-            
-                        <div class="clearfix"></div>
-            
-                        <input type="submit" id="guardar" value="Iniciar Sesión" class="btn btn-succes" />
-                        <input type="submit" id="boton" value="Registrarse" class="btn btn-danger" />
-                        <div id="error"></div>
-                    </form>
+                <h2>Métodos de producción</h2>
+                <br id="metodos1">
+                <p>Los métodos de producción sostenibles y ecológicos se centran en cuidar el medio ambiente y ofrecer productos de alta calidad. Estos enfoques buscan minimizar el impacto negativo en los recursos naturales y la biodiversidad, 
+                    al tiempo que promueven la salud del suelo y la sustentabilidad a largo plazo.</p>
+                <br>
+                <div class="orange">
+                    <a href="#" target="_blank" class="btn-orange">Agricultura Organica</a>
+                    <a href="#" target="_blank" class="btn-orange">Permacultura</a>
+                    <a href="#" target="_blank" class="btn-orange">Agricultura de conservación</a>
+                    <a href="#" target="_blank" class="btn-orange">Conservación de la biodiversidad</a> 
                 </div>
-            </section>
+            </div>
+        </section>
+        <br>
         <div class="clearfix"></div>
-
+        <!-- Comercialización -->
+        <section id="comercializacion">
+            <div class="center">
+                <h2>Comercialización</h2>
+                <br>
+                <p>Nuestros productos se encuentran disponibles en diversos lugares para brindar mayor accesibilidad a nuestros clientes. A continuación, te proporcionaré información
+                     más detallada sobre los diferentes lugares donde puedes adquirir nuestros productos:</p>
+                <div class="green">
+                    <a href="#" target="_blank" class="btn-green">Mercados Locales</a>
+                    <img src="images/Tiendas.jpeg" alt="Imagen de una Tienda de barrio">
+                </div>
+                <div class="green">
+                    <a href="#" target="_blank" class="btn-green">Tiendas Actualizadas</a>
+                    <img src="images/tiendas-act.jpg" alt="Imagen de una Tienda Actualizada">
+                </div>
+                <div class="green">
+                    <a href="#" target="_blank" class="btn-green">Supermercados</a> 
+                    <img src="images/super.jpg" alt="imagen de un Supermercado">
+                </div>
+            </div>
+        </section>
+        <div class="clearfix"></div>
+        <br>
+        <!-- Consejos -->
+        <section id="consejos">
+            <div class="center">
+                <h2>Consejos y guías</h2>
+                <br>
+                <p>La producción agrícola es un campo amplio y 
+                    diverso que abarca una variedad de cultivos, desde vegetales y 
+                    frutas hasta granos y plantas ornamentales. Comprender los conceptos 
+                    básicos de la agricultura es fundamental para garantizar un rendimiento óptimo de tus cultivos. 
+                    Por lo tanto, aquí encontrarás información detallada sobre los diferentes tipos de cultivos, 
+                    incluyendo las condiciones de crecimiento ideales, los requisitos de suelo y agua, las técnicas de siembra y cosecha,
+                     y las plagas y enfermedades comunes que pueden afectar a tus plantas.
+                </p>
+            </div>
+        </section>
+        <br>
+        <div class="clearfix"></div>
             <!-- Buscador y contacto -->
- 
         <aside id="sidebar">
-
             <div id="search" class="sidebar-item">
                 <h3>Buscador</h3>
                 <p>Realiza tu búsqueda</p>
@@ -189,7 +196,6 @@
                     <input type="submit" name="submit" value="Buscar" class="btn btn-succes">
                 </form>
             </div>
-        
             <div id="nav-blog" class="sidebar-item">
                 <h3>Contactanos</h3>
                 <p><ion-icon name="location-outline"></ion-icon> Calle 5 #34-35 Av.57</p>
@@ -207,7 +213,6 @@
         </div>
     </footer>
 </body>
-<script src="JS/JS.js"></script>
 <script src="https://kit.fontawesome.com/459ee9189d.js" crossorigin="anonymous"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

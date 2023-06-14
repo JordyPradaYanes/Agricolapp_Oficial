@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agricolapp</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="icon" href="../images/icono.webp" />
+  </head>
+  <body id="body">
+    <!-- USUARIOS -->
+    <div class="user">
+      <section id="secform">
+        <div class="center">
+          <div class="content user" id="user">
+            <h1 class="subheader">Ingresar Usuario</h1>
+            <form class="mid-form" id="formulario" autocomplete="off">
+              <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="name" class="errores" name="nombre" required />
+              </div>
+              <div class="form-group">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="lastname" class="errores" name="nombre" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="errores" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="">Contraseña: </label>
+                <input type="password" id="password" class="errores" type="password" required/>
+              </div>
+              <div class="form-group radiobtn">
+                <input type="radio" name="genero" id="hombre" value="hombre" /> Masculino
+                <input type="radio" name="genero" id="mujer" value="mujer" /> Femenino
+              </div>
+              <div class="clearfix"></div>
+              <input type="submit" id="guardar" value="Iniciar Sesión" class="btn btn-succes"/>
+              <input type="submit" id="boton" value="Registrarse" class="btn btn-danger"/>
+              <div id="error"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+  </body>
+  <script src="https://kit.fontawesome.com/459ee9189d.js" crossorigin="anonymous"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="../Js/form.js"></script>
+</html>

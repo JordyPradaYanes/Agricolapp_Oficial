@@ -30,14 +30,16 @@ html {
     background: white;
     border-bottom: 1px solid #ccc;
     border-top: 5px solid #9b9b9b;
-    
+    box-sizing: border-box;
 }
-
 .center{
     width: 100%;
     margin: 0px auto;   
 }
-
+#metodos p{
+    justify-content: left;
+    text-align: justify;
+}
 .clearfix{
     clear: both;
 }
@@ -45,7 +47,7 @@ html {
 /* Logo  */
 
 #logo{
-    width: 30%;
+    width: 10%;
     font-size: 30px;
     float: left;
     margin-top: 23px;
@@ -56,7 +58,6 @@ html {
     float: right;
     height: 130px;
     margin-top: -54px;
-    margin-right: 3px;
     animation: latir infinite 3s linear;
 }
 
@@ -86,9 +87,9 @@ html {
 /* Menu  */
 
 #menu{
-    width: 70%;
+    width: 90%;
     float: right;
-    font-size: 18px;
+    font-size: 10px;
     text-align: center;
     align-items: center;
     box-sizing: border-box;
@@ -100,7 +101,7 @@ div #menu{
     width: 60%;
     float: right;
     justify-content: center;
-    display: flex;
+    display: inline-flex;
 }
 
 div #menu a{
@@ -112,6 +113,9 @@ div #menu a{
     padding: 0 10px;
     padding-bottom: 5px;
     border-radius: 8px;
+}
+ul{
+    list-style: none; 
 }
 
 div #menu  a{
@@ -240,7 +244,8 @@ div .article-item.article-btn p{
     background: black;
 }
 input[type="text"],
-input[type="email"]{
+input[type="email"],
+input[type="password"]{
     width: 100%;
     min-height:25px;
     border: 1px solid #ccc;
@@ -249,10 +254,86 @@ input[type="email"]{
     transition: 300ms all;
 }
 input[type="text"]:focus,
-textarea:focus{
-    box-shadow: 0px 0px 2px #444 inset;
+input[type="email"]:focus,
+input[type="password"]:focus{
+    box-shadow: 0px 0px 2px;
+    border: 1px black solid;
     outline: none;
 }
+
+#metodos p{
+    border-bottom: 2px solid #eee;
+}
+#comercializacion p{
+    border-bottom: 2px solid #eee;
+}
+
+#metodos .btn-orange{
+    background: rgb(255, 155, 32);
+    color: rgb(51, 3, 61);
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center; 
+    padding: 15px;
+    width: 100%;
+    height: 80px;
+    margin: 0;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-shadow: none;
+    text-decoration: none;
+    line-height: 30px;
+    box-shadow: 0px 0px 5px rgb(165, 165, 165);
+    margin: 15px;
+    border-radius: 5px;
+    transition: 300ms all;
+}
+#metodos .btn-orange:hover{
+    background: rgb(255, 140, 0);
+    color: white;
+    border: black 1px solid;
+}
+#comercializacion p{
+    text-align: justify;
+}
+#comercializacion h2{
+    margin-top: 50px;
+}
+#comercializacion .btn-green{
+    background: rgb(37, 170, 25);
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center; 
+    padding: 15px;
+    width: 100%;
+    height: 80px;
+    margin: 0px;
+    font-size: 15px;
+    text-transform: upperc-ase;
+    text-shadow: none;
+    text-decoration: none;
+    line-height: 30px;
+    box-shadow: 0px 0px 5px rgb(165, 165, 165);
+    margin: 15px;
+    border-radius: 5px;
+    transition: 300ms all;
+}
+#comercializacion .btn-green:hover{
+    background: rgb(37, 170, 25);
+    border: black 1px solid;
+}
+.green img{
+    width: 100%;
+    height: 400px;
+}
+#consejos p{
+    text-align: justify;
+}
+/* Footer  */
+
 #footer{
     background: #616161;
     width: 100%;
@@ -359,15 +440,20 @@ textarea:focus{
 
 /* Formulario  */
 
-textarea{
+section .user{
+    margin: 50px;
+    border: 1px black solid;
+    height: 700px;
+    width: 900px;
+    background-color: white;
+}
+.form-group{
     width: 100%;
     height: 100px;
     max-width: 100%;
     min-width: 100%;
     min-height: 100px;
     max-height: 300px;
-    
-    
 }
 
 .mid-form{
@@ -380,10 +466,9 @@ textarea{
     float: left;
     display: block;
     margin-bottom: 5px;
-    font-size: 17px;
+    font-size: 15px;
     margin-top: 10px;
 }
-
 .radiobtn{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -391,9 +476,7 @@ textarea{
 }
 
 
-
 /* RESPONSIVE  */
-
 
 @media (max-width: 1540px){
    .center{
@@ -409,9 +492,12 @@ textarea{
     #menu ul{
         width: auto;
     }
+    .content .article-item.article-btn{
+        font-size: 14px;    
+    }
  }
 
- @media (max-width: 910px){
+ @media (max-width: 920px){
 
     #logo{
         float: none;
@@ -445,7 +531,7 @@ textarea{
 
     #sidebar{
         float: none;
-        width: 60%;
+        width: 70%;
         margin: 0px auto;
         margin-bottom: 50px;
     }
@@ -455,9 +541,35 @@ textarea{
         font-size: 40px;
         padding-top: 200px;
     }
-
+    #sidebar .sidebar-item p{
+        font-size: 15px;
+    }
     .mid-form{
         width: 70%;
+    }
+ }
+ @media (max-width: 840px) {
+    #sidebar{
+        width:80%;
+    }
+    #sidebar .sidebar-item p{
+        font-size: 12px;
+    }
+ }
+ @media (max-width: 780px) {
+    .content .article-item.article-btn{
+        font-size: 13px;    
+    }
+ }
+ @media (max-width: 700px) {
+    .content .article-item.article-btn{
+        font-size: 12px;   
+    }
+    .content{
+        width: 100%;
+        float: left;
+        height: 450px;
+        margin-right: 20px;
     }
  }
  @media (max-width: 605px) {
@@ -488,7 +600,7 @@ textarea{
     #articles p{
         font-size: 12px;
     }
-
+    
     #slider{
         height: 550px;
     }
@@ -509,7 +621,10 @@ textarea{
     #slider.slider-small h1{
         padding-top: 35px;
     }
-
+    #sidebar{
+        width:100%;
+    }
 
  }
+ 
  
